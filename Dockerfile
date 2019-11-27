@@ -23,4 +23,4 @@ COPY ref ./ref
 COPY computational_tools ./computational_tools
 COPY python_script ./python_script
 COPY input ./input
-RUN /usr/local/bin/jupyter-notebook --ip=0.0.0.0 --no-browser --allow-root
+RUN jupyter-notebook --ip=0.0.0.0 --no-browser --allow-root
