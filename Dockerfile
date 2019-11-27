@@ -16,7 +16,7 @@ RUN pip install jupyter
 #COPY requirement.txt ./requirement.txt
 #RUN pip install esdk-obs-python --trusted-host pypi.org
 #RUN pip install -r requirement.txt
-ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
+#ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 RUN mkdir /home/gbig/
 WORKDIR /home/gbig
 COPY ref ./ref
