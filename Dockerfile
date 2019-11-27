@@ -1,7 +1,7 @@
 # gBIGjupyter enviroments
 FROM centos/python-36-centos7
 MAINTAINER  yangyi@tib.cas.cn
-RUN yum install -y --no-install-recommends vim
+RUN yum install -y vim
 RUN wget --no-check-certificate https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh
 RUN bash ./Miniconda2-latest-Linux-x86_64.sh -b -p /opt/miniconda3
 RUN /opt/miniconda3/bin/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/ && \
