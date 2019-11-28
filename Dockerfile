@@ -1,5 +1,5 @@
 # gBIGjupyter enviroments
-FROM python
+FROM centos/python-34-centos7
 MAINTAINER  yangyi@tib.cas.cn
 USER root
 RUN yum install -y vim
