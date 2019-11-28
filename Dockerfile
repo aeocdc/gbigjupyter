@@ -1,5 +1,5 @@
 # gBIGjupyter enviroments
-FROM silverlogic/python3.6
+FROM python
 MAINTAINER  yangyi@tib.cas.cn
 #USER root
 #RUN yum install -y vim
