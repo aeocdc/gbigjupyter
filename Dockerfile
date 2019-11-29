@@ -2,7 +2,7 @@
 FROM python
 MAINTAINER  yangyi@tib.cas.cn
 #USER root
-RUN apt install ocl-icd-opencl-dev
+RUN apt-get update && apt-get install -y ocl-icd-opencl-dev
 RUN wget --no-check-certificate https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh
 RUN bash ./Miniconda2-latest-Linux-x86_64.sh -b -p /opt/miniconda3
 RUN /opt/miniconda3/bin/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/ && \
