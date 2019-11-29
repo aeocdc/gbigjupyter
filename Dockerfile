@@ -13,6 +13,7 @@ RUN /opt/miniconda3/bin/conda config --add channels https://mirrors.tuna.tsinghu
     /opt/miniconda3/bin/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
 RUN /opt/miniconda3/bin/conda install -y cas-offinder
 RUN pip install jupyter
+RUN pip install pocl
 #COPY requirement.txt ./requirement.txt
 #RUN pip install esdk-obs-python --trusted-host pypi.org
 #RUN pip install -r requirement.txt
